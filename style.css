@@ -1,0 +1,19 @@
+.row.p-3{
+    height: 200px;
+    width: 20%;
+    /* background-color: powderblue; */
+
+}
+
+.row-lg-4{
+
+    position:relative; 
+    left:350px; 
+    top:2px;
+}
+
+#matched-counselors{
+    position:relative;
+    left:150px; 
+}
+
