@@ -1,3 +1,9 @@
+body{
+
+    /* background-color:black  !important; */
+}
+
+
 .row.p-3{
     height: 200px;
     width: 20%;
@@ -17,3 +23,10 @@
     left:150px; 
 }
 
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
