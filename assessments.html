@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quatro Wellness</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    
 </head>
 <body>
     <header>
@@ -35,32 +37,41 @@
             </div>
           </nav>
     </header>
-    <h1 class="text-center">
-        We see you, We feel you
-        <h1 class="text-center">
-            We are here for you!
-        </h1>
-    </h1>
-    <div class="container-fluid">
-        <div class="p-3 row float-right">
-            <div class="col border border-primary justify-content-between">
-                <div class="row justify-content-start"></div>
-                <div class="w-85 p-3" style="background-color: #eee;">
-                    <h1> Mental Health Counselors</h1>
-                    </div>
-                </div>ß
-            </div>
+    <!--body goes here-->
+    <body>
+
+    
+        <div class="timer"><span id="time"></span></div>
+    
+        <div class="wrapper">
+          <div id="start-screen" class="start">
+            <h1>Mental Health Assessment</h1>
+            <p>
+                If you are experiencing a medical emergency, please call 911 or present to your nearest emergency room for evaluation!
+            </p>
+            <button id="start">Start Assessment</button>
+          </div>
+    
+          <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+          </div>
+    
+          <div id="end-screen" class="hide">
+            <h2>Thank you for completing the assessment!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+              Please enter your name: <input type="text" id="initials" max="3" />
+              <button id="submit">Send to counselor</button>
+            </p>
+          </div>
+    
+          <div id="feedback" class="feedback hide"></div>
         </div>
-        <div class="p-3 row float-left">
-            <div class="col border border-primary">
-                <div class="row justify-content-end">
-                  <div class="w-85 p-3" style="background-color: #eee;">
-                    <h1> Personal Trainers/Coaches</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
+    
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
