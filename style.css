@@ -17,7 +17,7 @@ body{
     top:2px;
 }
 
-#matched-counselors{
+#matched-counselor{
     position:relative;
     left:150px; 
 }
@@ -52,3 +52,10 @@ margin: auto;
 }
 
    
+#footer-logo{
+
+    width: 25%; 
+    height: 5%; 
+    object-fit: contain; 
+    
+    }
