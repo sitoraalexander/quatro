@@ -1,0 +1,61 @@
+body{
+
+    /* background-color:black  !important; */
+}
+
+
+.row.p-3{
+    height: 150px;
+    width: 20%;
+    /* background-color: powderblue; */
+
+}
+
+.row-lg-4{
+    position:relative; 
+    left:350px; 
+    top:2px;
+}
+
+#matched-counselor{
+    position:relative;
+    left:150px; 
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
+  img { 
+    width: 10%; 
+    height: 10%; 
+    object-fit: contain; 
+   
+}
+
+#quatro-logo { 
+    width: 3%; 
+    height: 5%; 
+    object-fit: contain; 
+}
+
+.col-lg-4{
+
+padding-left:10%;
+margin: auto;
+
+}
+
+   
+#footer-logo{
+
+    width: 25%; 
+    height: 5%; 
+    object-fit: contain; 
+    
+    }
