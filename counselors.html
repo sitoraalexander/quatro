@@ -116,12 +116,9 @@ console.log(counselor);
 
 
 function mentalHealthContact(e){
-
-  var counselor = counselors[2];
+var counselor = counselors[2];
 console.log(e.target);
 console.log(counselor);
-
-  
 }
 
 const makeAjaxCall = () => {
@@ -133,17 +130,10 @@ const makeAjaxCall = () => {
                 }).then(function (response) {
                     console.log(response);
                     theResponse = response;
-
                 });
             }
-
 $mentalHealthContact.click(mentalHealthContact);
 $physicalHealthContact.click(physicalHealthContact);
-
-
-
-
-
 });
 
 
