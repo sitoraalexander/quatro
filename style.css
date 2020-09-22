@@ -4,18 +4,18 @@ body{
 }
 
 
-.row.p-3{
+.counselors{
     height: 150px;
     width: 20%;
     /* background-color: powderblue; */
 
 }
 
-.row-lg-4{
+/* .row-lg-4{
     position:relative; 
     left:350px; 
     top:2px;
-}
+} */
 
 #matched-counselor{
     position:relative;
