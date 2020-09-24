@@ -33,6 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar nav ml-auto">
+                
                 <li class="nav-item">
                   <a class="nav-link" href="#">Help</a>
                 </li>
@@ -73,10 +74,6 @@
                   <h4 class="text-center"> Female</h4>
                   </div>
               </a>
-              </div>
-          </div>
-        </div>
-    </div>
               
               </div>
           </div>
@@ -97,38 +94,48 @@
             <img id ='footer-logo' src="./assets/counselorsImg/logo.png" class="rounded mx-auto d-block" alt="...">
           </div>
         </footer> -->
+
         <script>
-$(document).ready(function () {
-var $mentalHealthContact = $('#mental-contact');
-var $physicalHealthContact = $('#physical-contact');
 
 $(document).ready(function () {
 
 var $mentalHealthContact = $('#mental-contact');
 var $physicalHealthContact = $('#physical-contact');
+
 
 function physicalHealthContact(e){
  var counselor = counselors[1];
 console.log(e.target);
 console.log(counselor);
 }
+
+
 function mentalHealthContact(e){
+
   var counselor = counselors[2];
 console.log(e.target);
 console.log(counselor);
+
+  
 }
 
-const makeAjaxCall = ({
-                var healthReferences = $('').val(),
-                var myQuery = 'API/URL/' + healthReferences + 'URL***URL***URL***API***',
+const makeAjaxCall = () => {
+                var healthReferences = $('').val();
+                var myQuery = 'API/URL/' + healthReferences + 'URL***URL***URL***API***';
                 $.ajax({
                     type: "GET",
                     url: myQuery
                 }).then(function (response) {
                     console.log(response);
                     theResponse = response;
-                })
-        </script>
+
+                });
+            }
+
+$mentalHealthContact.click(mentalHealthContact);
+$physicalHealthContact.click(physicalHealthContact);
+
+});
 
         </script>
 
@@ -137,4 +144,4 @@ const makeAjaxCall = ({
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/counselors.js"></script>
 </body>
-</html> 
+</html>
