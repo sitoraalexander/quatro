@@ -102,13 +102,10 @@ $(document).ready(function () {
 var $mentalHealthContact = $('#mental-contact');
 var $physicalHealthContact = $('#physical-contact');
 
-        <script>
-
 $(document).ready(function () {
 
 var $mentalHealthContact = $('#mental-contact');
 var $physicalHealthContact = $('#physical-contact');
-
 
 function physicalHealthContact(e){
  var counselor = counselors[1];
@@ -121,18 +118,9 @@ console.log(e.target);
 console.log(counselor);
 }
 
-
-function mentalHealthContact(e){
-
-  var counselor = counselors[2];
-console.log(e.target);
-console.log(counselor);
-
-
-
-const makeAjaxCall = () => {
-                var healthReferences = $('').val();
-                var myQuery = 'API/URL/' + healthReferences + 'URL***URL***URL***API***';
+const makeAjaxCall = ({
+                var healthReferences = $('').val(),
+                var myQuery = 'API/URL/' + healthReferences + 'URL***URL***URL***API***',
                 $.ajax({
                     type: "GET",
                     url: myQuery
