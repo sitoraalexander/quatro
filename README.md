@@ -1,17 +1,14 @@
 # Quatro Wellness
 
 ## About the app: 
-### Marketplace of mental health counselors and personal trainers based on conditional questionnaire provided upon entering the webpage. Results of coaches will be displayed based on the user score assigned based on answers. 
+### Prevention is better than a treatment. Since there are a lot of misguided information online, we decided to create a platform where users can obtain Preventive Screening they need based on evidence based information provided by reputable US' health agencies. This application gives custom preventive screening recommendations as well as a list of health coaches in user's state, based on user's age, gender and social history.
 
 
 ## Audience: 
-### Parents who are in mental, physical and financial crisis during COVID-19.
-
-   ### 1. Users: Parents who are stuck at home, homeschooling kids with declining patience while dealing with children academically and lack of time for self care. 
-   ### 2. Providers: Parents: Mental Health counselors and Personal Trainers who are stuck at home, homeschooling - decline in business due to childcare. 
+### Users who are searching medical articles at home, during COVID-19.
 
 ## Purpose: 
-### Because there are many parents stuck at home who are going through mental, physical and financial burden. Two of the founders of this project are actively experiencing these obstacles real time. So, the other two decided to save them. 
+### Prevention is better than a treatment. Since there are a lot of misguided information online, we decided to create a platform where users can obtain Preventive Screening they need based on evidence based information provided by reputable US' health agencies. This application gives custom preventive screening recommendations as well as a list of health coaches in user's state, based on user's age, gender and social history. 
 
 ## Check out our awesome project here. Stay healthy! 
 
