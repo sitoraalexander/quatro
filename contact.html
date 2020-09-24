@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quatro Wellness</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+      a.nav-brand{
+          color: #7207ED !important;
+          font-size: x-large;
+      }
+      a.navbar-brand{
+          color: rgb(0, 0, 0)!important;
+      }
+      ul > li > a{
+          color: #7207ED !important;
+      }
+      .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(0, 0, 0)!important;
+            opacity: 1; /* Firefox */
+        }
+
+        .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #7207ED!important;
+        }
+
+        .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #7207ED!important;
+        }
+        .form-control{
+            border: 1px solid #7207ED;
+        }
+        .btn-outline-primary{
+            border: 1px solid #7207ED;
+            color: #7207ED;            
+        }
+        .btn-outline-success{
+            border: 1px solid p#7207ED;
+            color: #7207ED;
+        }
+        h2 {
+          font-family:Verdana, Geneva, Tahoma, sans-serif, Georgia, Times, 'Times New Roman', serif!important;
+          font-size: medium!important;
+        }
+  </style>
+  <style>
+      nav a{
+        color: #7207ED;
+      }
+    </style>
+</head>
+<body style="color: #7207ED !important;font-weight: 800 !important;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
+
+            <a class="navbar-brand" href="index.html">
+              <img id ='quatro-logo' src="assets/logo.png" style="height:50px;" class="rounded mx-auto d-block" alt="QuatroLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar nav ml-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+<div class="container" style="color: #7207ED !important;font-weight: 500 !important; font-weight: bold;">
+    <div class="col-md-8  offset-md-2">
+        <p style="font-weight: 500; font-size:30px;"> Submit appointment Request</p>
+        <br/>
+        <form class="form  mb-5">
+            <div class="form-group">
+              <input type="email" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="dob" placeholder="DOB: mm/dd/yyyy">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="reason" placeholder="Reason for Appointment">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-sm btn-outline-primary float-right" id="submit" placeholder="">
+            </div>
+
+          </form>
+    </div>
+</div>
+
+
+<footer class="footer mt-auto py-3">
+    <div class="container">
+    <img id ='footer-logo' src="assets/logo.png" style="height: 50px;" class="rounded mx-auto d-block" alt="...">
+    </div>
+    </footer>
+
+</body>
+</html>

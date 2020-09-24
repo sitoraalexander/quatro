@@ -33,54 +33,53 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar nav ml-auto">
+                
                 <li class="nav-item">
                   <a class="nav-link" href="#">Help</a>
                 </li>
- 
+                
               </ul>
             </div>
           </nav>
     </header>
-    <h1 class="text-center" style="font-family: Arial, Helvetica, sans-serif;">
-      <br/>
-      Welcome to Quatro Wellness App!
-      <br/>
-      <br/>
-      <h3 class="text-center">
-        Your health is our priority!
-        Please choose your gender to continue
-      </h3>
-      <br/>
-      <br/>
+    <h1 class="text-center">
+      Health Assessments
   </h1>
-  <div class="container">
+  <div class="container-fluid">
       <div class="p-3 row">
-        <div class="col-sm-6" >
-          <div class="col border border-primary justify-content-between" style="background-color: #eee;color: purple;font-family: Arial, Helvetica, sans-serif;">
-              <div class="row justify-content-start"></div>
-              <a href="assessments.html?sex=male" style="color: purple">
-              <div class="w-85 p-3" >
-                  <h4 class="text-center"> Male</h4>
-                  </div>
-                </a>
-              </div>
-          </div>
-          <div class="col-sm-6" >
-            <div class="col border border-primary justify-content-between" style="background-color: #eee;color:purple;">
-              <div class="row justify-content-start"></div>
-              <a href="assessments.html?sex=female" style="color: purple">
-                <div class="w-85 p-3" >
-                  <h4 class="text-center"> Female</h4>
-                  </div>
-              </a>
-              </div>
-          </div>
+        <div class="col-sm-4 offset-sm-4">
+          <form action="recomendations.html" id="form">
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" name="age" id="age" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="tobaccoSmoked">Have you ever smoked tobacco?</label>
+              <select name="tobacco_smoked" id="tobaccoSmoked" class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no" selected>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="secuallyActivity">Sexually activity?</label>
+              <select name="secually_activity" id="secuallyActivity" class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no" selected>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="state">State of residence</label>
+              <select name="state" id="state" class="form-control">
+                <option value="New York">New York</option>
+                <option value="New Jersey">New Jersey</option>
+              </select>
+            </div>
+            <input type="hidden" id="sex" name="sex">
+            <hr>
+            <button class="btn btn-primary mx-auto  d-block">Continue</button>
+          </form>
         </div>
-    </div>
-              
-              </div>
-          </div>
-        </div>
+      </div>
 
     </div>
 
@@ -97,69 +96,31 @@
             <img id ='footer-logo' src="./assets/counselorsImg/logo.png" class="rounded mx-auto d-block" alt="...">
           </div>
         </footer> -->
-        <script>
-$(document).ready(function () {
-var $mentalHealthContact = $('#mental-contact');
-var $physicalHealthContact = $('#physical-contact');
-
-        <script>
-
-$(document).ready(function () {
-
-var $mentalHealthContact = $('#mental-contact');
-var $physicalHealthContact = $('#physical-contact');
 
 
-function physicalHealthContact(e){
- var counselor = counselors[1];
-console.log(e.target);
-console.log(counselor);
-}
-function mentalHealthContact(e){
-  var counselor = counselors[2];
-console.log(e.target);
-console.log(counselor);
-}
-
-
-function mentalHealthContact(e){
-
-  var counselor = counselors[2];
-console.log(e.target);
-console.log(counselor);
-
-  
-}
-
-const makeAjaxCall = () => {
-                var healthReferences = $('').val();
-                var myQuery = 'API/URL/' + healthReferences + 'URL***URL***URL***API***';
-                $.ajax({
-                    type: "GET",
-                    url: myQuery
-                }).then(function (response) {
-                    console.log(response);
-                    theResponse = response;
-                });
-            }
-$mentalHealthContact.click(mentalHealthContact);
-$physicalHealthContact.click(physicalHealthContact);
-});
-        </script>
-
-                });
-            }
-
-$mentalHealthContact.click(mentalHealthContact);
-$physicalHealthContact.click(physicalHealthContact);
-
-});
-
-        </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/counselors.js"></script>
+
+    <script>
+      
+      function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, '\\$&');
+          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+      $(document).ready(function(){
+        var userSex = getParameterByName('sex');
+        if (userSex==null || userSex.length==0) {
+          window.location.href = 'index.html'
+        }
+        $("#sex").val(userSex)
+      })
+    </script>
 </body>
-</html> 
+</html>
